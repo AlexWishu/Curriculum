@@ -4,14 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina de Inicio</title>
+    <link rel="stylesheet" href="css/waves.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
+    <header class="background-header">
         <nav>
-            <div class="marca">
-                <h1>Marca</h1>
-            </div>
             <div class="navbar">
                 <ul>
                     <li>
@@ -25,9 +23,29 @@
         </nav>
         <div class="header-body">
             <h1>BIENVENIDOS A MI PAGINA WEB</h1>
+            <div class="d-flex">
+                <button class="button btn-primary">De que trata?</button>
+                <button class="button">Contacto</button>
+            </div>
         </div>
     </header>
 
+    <section>
+        <h1>Hola</h1>
+        <h1>Hola</h1>
+        <h1>Hola</h1>
+        <h1>Hola</h1>
+        <h1>Hola</h1>
+        <h1>Hola</h1>
+        <h1>Hola</h1>
+        <h1>Hola</h1>
+    </section>
+
+    <script src="js/waves.min.js"></script>
+    <script type="text/javascript">
+        Waves.init();
+        Waves.attach('.button', ['waves-button', 'waves-float']);
+    </script>    
     <script src="js/app.js"></script>
 </body>
 </html>
