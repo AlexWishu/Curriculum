@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina de Inicio</title>
+    <link rel="stylesheet" href="fonts/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="css/waves.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="background-header">
+    <header id="header" class="background-header">
         <nav>
             <div class="navbar">
                 <ul>
                     <li>
-                        <a href="https://www.google.com">Inicio</a>
+                        <a href="#header">Inicio</a>
                     </li>
                     <li>
                         <a href="https://www.youtube.com/">Contacto</a>
@@ -24,28 +25,53 @@
         <div class="header-body">
             <h1>BIENVENIDOS A MI PAGINA WEB</h1>
             <div class="d-flex">
-                <button class="button btn-primary">De que trata?</button>
-                <button class="button">Contacto</button>
+                <a href="https://www.youtube.com/" class="button btn-primary">De que trata?</a>
+                <a class="button">Contacto</a>
             </div>
         </div>
     </header>
 
     <section>
-        <h1>Hola</h1>
-        <h1>Hola</h1>
-        <h1>Hola</h1>
-        <h1>Hola</h1>
-        <h1>Hola</h1>
-        <h1>Hola</h1>
-        <h1>Hola</h1>
-        <h1>Hola</h1>
+        <a href="#header" id="btn-scroll-up" class="button btn-primary"><i class="fas fa-chevron-up"></i></a>
+        <article id="informacion">
+            <div id="body-informacion">
+                <h1 class="font-informacion" style="font-size: 50px;">Alexander Pérez</h1>
+                <h2 class="font-informacion" style="font-size: 30px;">Frontend Developer</h2>
+                <div id="section-informacion">
+                    <i class="fas fa-envelope">
+                        <p>alexander.perez.urbina55@gmail.com</p>
+                    </i>
+                    <i class="fas fa-phone">
+                        <p>+56 9 7790 5553</p>
+                    </i>
+                    <i class="fas fa-map-marker-alt">
+                        <p>San Felipe, Chile</p>
+                    </i>
+                </div>
+                <div class="d-flex icon-socials border">
+                    <a href="https://www.facebook.com/alexander.perez.urbina55/" class="button facebook-color" target="__blank">
+                       <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/_alexwishu_/" class="button instagram-color" target="__blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/alexander-perez-urbina-8602ab1b9/" class="button linkedin-color" target="__blank">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <img id="img-informacion" src="images/alexander-recortado.png" alt="">
+            </div>
+        </article>
     </section>
 
     <script src="js/waves.min.js"></script>
     <script type="text/javascript">
         Waves.init();
         Waves.attach('.button', ['waves-button', 'waves-float']);
-    </script>    
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>    
     <script src="js/app.js"></script>
 </body>
 </html>
