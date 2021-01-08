@@ -8,8 +8,11 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+
 $(document).ready(() => {
-    $('#btn-scroll-up').hide();
+    if($(window).scrollTop() < 408){
+        $('#btn-scroll-up').hide();
+    }
 })
 
 $(window).scroll(function (event) {
