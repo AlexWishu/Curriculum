@@ -9,15 +9,15 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header id="header" class="background-header">
+    <header id="home" class="background-header">
         <nav>
             <div class="navbar">
                 <ul>
                     <li>
-                        <a href="#header">Inicio</a>
+                        <a href="#home">Inicio</a>
                     </li>
                     <li>
-                        <a href="#header">Acerca de mi</a>
+                        <a href="#acerca">Sobre mi</a>
                     </li>
                     <li>
                         <a href="#contacto">Contacto</a>
@@ -35,41 +35,80 @@
     </header>
 
     <section>
-        <a href="#header" id="btn-scroll-up" class="button btn-primary"><i class="fas fa-chevron-up"></i></a>
+        <a href="#home" id="btn-scroll-up" class="button btn-primary"><i class="fas fa-chevron-up"></i></a>
 
         <article id="acerca">
-            <h1 style="font-size: 50px; font-family: sans-serif;">Acerca de mi</h1>
+            <div id="header-acerca">
+                <h1>Sobre mi</h1>
+                <div class="line-icon">
+                    <div class="circle-icon">
+                        <i class="fas fa-user"></i>
+                    </div>
+                </div>
+            </div>
+            <div id="body-acerca">
+                <img src="images/alex.jpg" alt="">
+                <div class="container-acerca">
+                    <div>
+                        <h3>Nombre Completo</h3>
+                        <p>Alexander de Jesús Pérez Urbina</p>
+                    </div>
+
+                    <div>
+                        <h3>Ubicación</h3>
+                        <p>San Felipe, Chile</p>
+                    </div>
+                </div>    
+                <div class="container-acerca" style="right: 0;">
+                    <div>
+                        <h3>Fecha de Nacimiento</h3>
+                        <p>10/02/2005</p>
+                    </div>
+                    <div>
+                        <h3>Ocupacion</h3>
+                        <p>Estudiante Front-end</p>
+                    </div>
+                </div>
+            </div>
         </article>
         
         <article id="contacto">
+
             <div id="body-contacto">
-                <h1 class="font-contacto" style="font-size: 50px;">Alexander Pérez</h1>
-                <h2 class="font-contacto" style="font-size: 30px;">Frontend Developer</h2>
-                <div id="section-contacto">
-                    <i class="fas fa-envelope">
-                        <p>alexander.perez.trabajos@gmail.com</p>
-                    </i>
-                    <i class="fas fa-phone">
-                        <p>+56 9 7790 5553</p>
-                    </i>
-                    <i class="fas fa-map-marker-alt">
-                        <p>San Felipe, Chile</p>
-                    </i>
+                <div id="informacion-contacto">
+                    <div id="title-contacto">
+                        <h1 style="font-size: 50px;">Alexander Pérez</h1>
+                        <h1 style="font-size: 30px;">Front-end Developer &#60;/&#62; Web Designer</h2>
+                    </div>
+                        
+                    <div id="section-contacto">
+                        <i class="fas fa-envelope">
+                            <p>alexander.perez.trabajos@gmail.com</p>
+                        </i>
+                        <i class="fas fa-phone">
+                            <p>+56 9 7790 5553</p>
+                        </i>
+                    </div>
+                        
+                    
+                    <div id="footer-contacto">
+                        <div class="d-flex icon-socials">
+                            <a href="https://www.facebook.com/alexander.perez.urbina55/" class="button facebook-color" target="__blank">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://www.instagram.com/_alexwishu_/" class="button instagram-color" target="__blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/alexander-perez-urbina-8602ab1b9/" class="button linkedin-color" target="__blank">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <div class="d-flex icon-socials">
-                    <a href="https://www.facebook.com/alexander.perez.urbina55/" class="button facebook-color" target="__blank">
-                       <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="https://www.instagram.com/_alexwishu_/" class="button instagram-color" target="__blank">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/alexander-perez-urbina-8602ab1b9/" class="button linkedin-color" target="__blank">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
+                
+                <div>
+                    <img id="img-contacto" src="images/alexander-recortado.png" alt="">
                 </div>
-            </div>
-            <div>
-                <img id="img-contacto" src="images/alexander-recortado.png" alt="">
             </div>
         </article>
     </section>
