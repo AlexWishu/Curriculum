@@ -1,5 +1,6 @@
 <?php
 
+//Esta funcion la saque de internet, lo que hace es poder hacer includes pero con la opcion de pasarle variables a traves de un array
 function _include($filePath, $variables = array(), $print = true)
 {
     $filePath = 'views/'.$filePath.'.php';
@@ -24,6 +25,7 @@ function _include($filePath, $variables = array(), $print = true)
     return $output;
 }
 
+//Esto tambien lo saque de internet, esto practicamente obtiene rutas
 $request = $_SERVER['REQUEST_URI'];
 
 switch ($request) {
@@ -35,6 +37,6 @@ switch ($request) {
         break;
     default:
         http_response_code(404);
-        require __DIR__ . '/views/404.php';
+        require __DIR__ . '/views/404/index.php';
         break;
 }

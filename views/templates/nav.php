@@ -13,3 +13,5 @@
         </ul>
     </div>
 </nav>
+
+<a href="#home" id="btn-scroll-up" class="button btn-primary"><i class="fas fa-chevron-up"></i></a>

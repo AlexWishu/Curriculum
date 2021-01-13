@@ -14,6 +14,10 @@
     outline: none;
 }
 
+html, body{
+    height: 100%;
+}
+
 .gradient-text{
     background-image: linear-gradient(45deg, rgba(195, 80, 201, .9),rgba(0, 255, 255, .9));
     background-size: 100%;
@@ -365,4 +369,52 @@ section article{
 
 .linkedin-color{
     background: rgb(93, 93, 255);
+}
+
+#body-404{
+    display: flex;
+    font-family: 'Segoe UI';
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/background-404.jpg"); 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    position: relative;
+
+}
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .7);
+    position: absolute;
+    z-index: 5;
+}
+
+.on-overlay{
+    z-index: 10;
+}
+
+#message-404{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#message-404 i{
+    font-size: 100px;
+    color: rgba(255, 255, 255, .7);
+}
+
+#message-404 h1{
+    color: rgba(255, 255, 255, .7);
+}
+
+#message-404 .button{
+    margin-top: 20px;
 }
